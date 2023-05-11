@@ -8,7 +8,7 @@ namespace AutoMapperIssue.Config
     {
         public DTOMapper()
         {
-            CreateMap<AppSettings, AppSettingsDto>();
+            CreateMap<AppSettings, AppSettingsDto>().ForMember(x => x.Name, y => y.MapFrom(z => z.Name));
         }
     }
 }

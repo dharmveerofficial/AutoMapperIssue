@@ -4,6 +4,6 @@ namespace AutoMapperIssue.IServices
 {
     public interface IAppSettingServices
     {
-        AppSettingsDto GetAppSettings();
+        IEnumerable<AppSettingsDto> GetAppSettings();
     }
 }
