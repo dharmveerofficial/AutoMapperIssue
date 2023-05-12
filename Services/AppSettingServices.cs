@@ -7,8 +7,8 @@ namespace AutoMapperIssue.Services
 {
     public class AppSettingServices:IAppSettingServices
     {
-        private readonly Mapper _mapper;
-        public AppSettingServices(Mapper mapper)
+        private readonly IMapper _mapper;
+        public AppSettingServices(IMapper mapper)
         {
             _mapper = mapper;
         }
