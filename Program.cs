@@ -1,8 +1,4 @@
-using AutoMapper;
 using AutoMapperIssue.Config;
-using AutoMapperIssue.IServices;
-using AutoMapperIssue.Services;
-using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +9,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddConfig();
 
 var app = builder.Build();

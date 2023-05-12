@@ -8,6 +8,6 @@ namespace AutoMapperIssue.Config
     public static class ServiceConfig
     {
         public static IServiceCollection AddConfig(this IServiceCollection Services) =>
-            Services.AddScoped<IAppSettingServices, AppSettingServices>();
+            Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies()).AddScoped<IAppSettingServices, AppSettingServices>();
     }
 }
